@@ -43,7 +43,6 @@ jobs:
       before_install:
         - sudo add-apt-repository ppa:beineri/opt-qt592-trusty -y
         - sudo apt-get update -qq
-        - ./scripts/travis-ci/before_install.bash
       install:
         - sudo apt-get -y install qt59base qt59translations
         - source /opt/qt*/bin/qt*-env.sh
