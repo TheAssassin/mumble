@@ -51,7 +51,7 @@ jobs:
       script: ./scripts/travis-ci/build_appimage.bash
       after_success:
         - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
-        - bash upload.sh ./*.AppImage*
+        - bash upload.sh ./Mumble*.AppImage*
 
 before_install:
     # - ./scripts/travis-ci/before_install.bash
