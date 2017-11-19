@@ -41,7 +41,7 @@ jobs:
   include:
     - stage: Create AppImage
       env:
-        - MUMBLE_QT=qt4 MUMBLE_HOST=x86_64-linux-gnu
+        - MUMBLE_QT=qt5 MUMBLE_HOST=x86_64-linux-gnu
       script: ./scripts/travis-ci/build_appimage.bash
 
 before_install:
