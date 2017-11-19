@@ -55,7 +55,8 @@ jobs:
         - bash upload.sh ./*.AppImage*
 
 before_install:
-    - ./scripts/travis-ci/before_install.bash
+    # - ./scripts/travis-ci/before_install.bash
+    - true
 
 script:
     # - ./scripts/travis-ci/script.bash
