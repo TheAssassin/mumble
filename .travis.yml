@@ -45,7 +45,7 @@ jobs:
         - sudo apt-get update -qq
         - ./scripts/travis-ci/before_install.bash
       install:
-        - sudo apt-get -y install qt59base
+        - sudo apt-get -y install qt59base qt59translations
         - source /opt/qt*/bin/qt*-env.sh
       env:
         - MUMBLE_QT=qt5 MUMBLE_HOST=x86_64-linux-gnu
