@@ -44,8 +44,8 @@ jobs:
         - sudo add-apt-repository ppa:beineri/opt-qt592-trusty -y
         - sudo apt-get update -qq
       install:
-        - sudo apt-get -y install qt59base qt59translations qt59tools protobuf-compiler libprotobuf-dev
-        - source /opt/qt*/bin/qt*-env.sh
+       - sudo apt-get -y install qt59base qt59translations qt59tools protobuf-compiler libprotobuf-dev libsndfile1-dev libssl-dev libgl1-mesa-dev libasound2-dev libpulse-dev libogg-dev libspeex-dev libspeexdsp-dev libopus-dev libzeroc-ice35-dev ice35-translators ice35-slice
+       - source /opt/qt*/bin/qt*-env.sh
       env:
         - MUMBLE_QT=qt5 MUMBLE_HOST=x86_64-linux-gnu
       script: ./scripts/travis-ci/build_appimage.bash
