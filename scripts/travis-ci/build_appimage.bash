@@ -4,7 +4,9 @@ set -x
 set -e
 
 qmake CONFIG+=release -recursive
-make INSTALL_ROOT=AppDir -j$(nproc) install
+make -j$(nproc)
+mkdir AppDir
+make INSTALL_ROOT=AppDir install
 
 # inspect AppDir -- TODO: remove this line before release
 tree AppDir
